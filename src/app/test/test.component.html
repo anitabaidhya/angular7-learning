@@ -15,4 +15,13 @@
 <input [disabled] = "false" [id] ="myId" type="text" value="enabled">
 <input [disabled] = "isDisabled" [id] ="myId" type="text" value="disabled">
 <!--Instead of using square('[]') bracket we can use 'bind-'' -->
-<input bind-disabled = "isDisabled" [id] ="myId" type="text" value="disabled">
+<input bind-disabled = "isDisabled" [id] ="myId" type="text" value="disabled"><br><br>
+
+<!--End of Property binding-->
+
+<!--Event Binding-->
+<!--$event help usto know what sort of event it is.It is the powerful tool for developing-->
+<button (click) = "onClick($event)">Greet</button><br>
+<button (click) = "greeting = 'Welcome to Anita Code'">Greet</button>
+{{greeting}}
+<!--End of Event Binding-->

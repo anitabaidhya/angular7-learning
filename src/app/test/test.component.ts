@@ -10,6 +10,8 @@ export class TestComponent implements OnInit {
   public siteUrl = window.location.href;
   public myId = "testId";
   public isDisabled = true;
+
+  public greeting = "";
   constructor() { }
 
   ngOnInit() {
@@ -17,5 +19,9 @@ export class TestComponent implements OnInit {
   }
   sayHello(){
     return "Hello " + this.name;
+  }
+
+  onClick(){
+    this.greeting = "Welcome to Anita's Page";
   }
 }
