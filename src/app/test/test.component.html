@@ -6,3 +6,13 @@
 <h2>Lowercase = {{name.toLowerCase()}}</h2>
 <h2>Greeting function = {{sayHello()}}</h2>
 <h2>The site URL is  {{siteUrl}}</h2>
+
+
+<!--Property Binding-->
+
+<input disabled = "false" id = "{{myId}}" type="text" value="disabled">
+<!--This aint gonna make the input type disabled because disabled property alons sets it to true and setting it to false doent have worth-->
+<input [disabled] = "false" [id] ="myId" type="text" value="enabled">
+<input [disabled] = "isDisabled" [id] ="myId" type="text" value="disabled">
+<!--Instead of using square('[]') bracket we can use 'bind-'' -->
+<input bind-disabled = "isDisabled" [id] ="myId" type="text" value="disabled">
