@@ -7,3 +7,10 @@
 <ng-template #elseBlock>
   <h2>The name is hidden.</h2>
 </ng-template>
+
+<div [ngSwitch]= "color"> 
+  <div *ngSwitchCase ="'red'">You picked red color</div>
+  <div *ngSwitchCase ="'blue'">You picked blue color</div>
+  <div *ngSwitchCase ="'green'">You picked greenc color</div>
+  <div *ngSwitchDefault >Pick again</div>
+</div>
