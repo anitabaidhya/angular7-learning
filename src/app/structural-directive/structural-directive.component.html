@@ -14,3 +14,8 @@
   <div *ngSwitchCase ="'green'">You picked greenc color</div>
   <div *ngSwitchDefault >Pick again</div>
 </div>
+
+
+<h2>{{date | date: 'shortDate'}}</h2>
+<h2>{{date | date: 'shortTime'}}</h2>
+<h2>{{0.25 | currency: 'EUR' : 'code'}}</h2>

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class StructuralDirectiveComponent implements OnInit {
   public displayName = true;
   public color = "red";
+  public date = new Date();
   constructor() { }
 
   ngOnInit() {
